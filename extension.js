@@ -32,15 +32,15 @@ export default class WindowChaosExtension extends Extension
         Main.panel._leftBox.insert_child_at_index(spacer2, 4);
         Main.panel._leftBox.insert_child_at_index(this._undoButton, 5);
 
-        this._chaosButton.connect('button-press-event', () => {
+        this._chaosPressId = this._chaosButton.connect('button-press-event', () => {
             this._chaos();
             return Clutter.EVENT_STOP;
         });
-        this._tidyButton.connect('button-press-event', () => {
+        this._tidyPressId = this._tidyButton.connect('button-press-event', () => {
             this._tidy();
             return Clutter.EVENT_STOP;
         });
-        this._undoButton.connect('button-press-event', () => {
+        this._undoPressId = this._undoButton.connect('button-press-event', () => {
             this._undo();
             return Clutter.EVENT_STOP;
         });
@@ -66,6 +66,14 @@ export default class WindowChaosExtension extends Extension
                 this.settings.disconnect(id);
             this._settingsChangedIds = null;
         }
+
+        // Disconnect button signals
+        if (this._chaosPressId) this._chaosButton?.disconnect(this._chaosPressId);
+        if (this._tidyPressId)  this._tidyButton?.disconnect(this._tidyPressId);
+        if (this._undoPressId)  this._undoButton?.disconnect(this._undoPressId);
+        this._chaosPressId = null;
+        this._tidyPressId = null;
+        this._undoPressId = null;
 
         this.settings = null;
         this._theme.unload_stylesheet(this._cssFile);
