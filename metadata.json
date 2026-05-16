@@ -1,0 +1,10 @@
+{
+    "uuid": "window-chaos@willnotbyte",
+    "name": "Window Chaos Manager",
+    "description": "Allows for in-depth window management, including randomizing window positions and sizes. Also a tidy mode so you can neatly arrange your windows with a single click.",
+    "version": 1,
+    "shell-version": ["45", "46", "47", "48", "49", "50"],
+    "session-modes": ["user"],
+    "type": "window",
+    "settings-schema": "org.gnome.shell.extensions.window-chaos"
+}

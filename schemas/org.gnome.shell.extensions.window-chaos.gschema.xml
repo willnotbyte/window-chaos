@@ -1,0 +1,21 @@
+<schemalist>
+    <schema id="org.gnome.shell.extensions.window-chaos" path="/org/gnome/shell/extensions/window-chaos/">
+
+        <key name="show-buttons" type="b">
+            <default>true</default>
+            <summary>Show All Buttons</summary>
+        </key>
+        <key name="chaos-toggle" type="b">
+            <default>true</default>
+            <summary>Show Chaos Button</summary>
+        </key>
+        <key name="tidy-toggle" type="b">
+            <default>true</default>
+            <summary>Show Tidy Button</summary>
+        </key>
+        <key name="undo-toggle" type="b">
+            <default>true</default>
+            <summary>Show Undo Button</summary>
+        </key>
+    </schema>
+</schemalist>
