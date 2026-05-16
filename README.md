@@ -32,12 +32,12 @@ Visit [extensions.gnome.org](https://extensions.gnome.org) and search for **Wind
 
 2. Copy the extension to your GNOME extensions folder:
    ```bash
-   cp -r window-chaos ~/.local/share/gnome-shell/extensions/window-chaos@dev
+   cp -r window-chaos ~/.local/share/gnome-shell/extensions/window-chaos@willnotbyte
    ```
 
 3. Compile the GSettings schema:
    ```bash
-   glib-compile-schemas ~/.local/share/gnome-shell/extensions/window-chaos@dev/schemas/
+   glib-compile-schemas ~/.local/share/gnome-shell/extensions/window-chaos@willnotbyte/schemas/
    ```
 
 4. Restart GNOME Shell:
@@ -46,7 +46,7 @@ Visit [extensions.gnome.org](https://extensions.gnome.org) and search for **Wind
 
 5. Enable the extension:
    ```bash
-   gnome-extensions enable window-chaos@dev
+   gnome-extensions enable window-chaos@willnotbyte
    ```
    Or use the **Extensions** app / **GNOME Tweaks**.
 
@@ -79,7 +79,7 @@ Open the extension preferences via the Extensions app or GNOME Tweaks.
 ## Project Structure
 
 ```
-window-chaos@dev/
+window-chaos@willnotbyte/
 ├── extension.js       # Core extension logic
 ├── prefs.js           # Preferences UI
 ├── metadata.json      # Extension metadata
