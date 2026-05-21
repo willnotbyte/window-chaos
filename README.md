@@ -19,7 +19,7 @@ A GNOME Shell extension that adds three panel buttons for fast, fun window manag
 
 ## Installation
 
-### From GNOME Extensions Website *(coming soon)*
+### From GNOME Extensions Website
 
 Visit [extensions.gnome.org](https://extensions.gnome.org) and search for **Window Chaos Manager**.
 
